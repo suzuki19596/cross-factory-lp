@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cross株式会社 | 検品・梱包・物流アウトソーシング</title>
+    <meta name="description" content="Cross株式会社は大阪を拠点に、工場の検品・梱包・アッセンブリ・物流代行サービスを提供しています。品質管理のプロフェッショナルとして、お客様のビジネスをサポートします。">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- ローディング画面 -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-logo">CROSS</div>
+            <div class="loader-bar"><span></span></div>
+        </div>
+    </div>
+
+    <!-- ヘッダー -->
+    <header class="header" id="header">
+        <div class="header-inner">
+            <a href="#" class="logo">
+                <span class="logo-text">CROSS</span>
+                <span class="logo-sub">株式会社</span>
+            </a>
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="#about">私たちについて</a></li>
+                    <li><a href="#services">サービス</a></li>
+                    <li><a href="#strength">強み</a></li>
+                    <li><a href="#recruit">採用情報</a></li>
+                    <li><a href="#company">会社概要</a></li>
+                    <li><a href="#contact" class="nav-contact">お問い合わせ</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="メニュー">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ヒーローセクション -->
+    <section class="hero">
+        <div class="hero-bg">
+            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1920&h=1080&fit=crop" alt="工場倉庫" class="hero-bg-image">
+            <div class="hero-gradient"></div>
+            <div class="hero-pattern"></div>
+        </div>
+        <div class="hero-content">
+            <p class="hero-label" data-aos="fade-up">Quality & Precision</p>
+            <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+                <span class="hero-title-line">品質管理の</span>
+                <span class="hero-title-line accent">プロフェッショナル</span>
+            </h1>
+            <p class="hero-text" data-aos="fade-up" data-aos-delay="200">
+                検品・梱包・アッセンブリから物流まで<br>
+                ワンストップでお客様のビジネスを支えます
+            </p>
+            <div class="hero-buttons" data-aos="fade-up" data-aos-delay="300">
+                <a href="#contact" class="btn btn-primary">
+                    <span>お問い合わせ</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                <a href="#services" class="btn btn-outline">
+                    <span>サービスを見る</span>
+                </a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- 私たちについて -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content" data-aos="fade-right">
+                    <p class="section-label">About Us</p>
+                    <h2 class="section-title">
+                        お客様の「困った」を<br>
+                        解決するパートナー
+                    </h2>
+                    <p class="about-text">
+                        Cross株式会社は、製造業・物流業界のお客様に向けて、
+                        検品・梱包・アッセンブリなどの各種作業を専門的に行う会社です。
+                    </p>
+                    <p class="about-text">
+                        「人手が足りない」「品質を安定させたい」「コストを削減したい」
+                        ——そんなお客様の課題に、豊富な経験と確かな技術でお応えします。
+                    </p>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 12l2 2 4-4"/>
+                                    <circle cx="12" cy="12" r="10"/>
+                                </svg>
+                            </div>
+                            <span>高品質な作業</span>
+                        </div>
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/>
+                                </svg>
+                            </div>
+                            <span>コスト削減</span>
+                        </div>
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12,6 12,12 16,14"/>
+                                </svg>
+                            </div>
+                            <span>柔軟な対応</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual" data-aos="fade-left">
+                    <div class="about-image">
+                        <img src="images/factory.jpg" alt="工場作業風景">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- サービス -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <p class="section-label">Services</p>
+                <h2 class="section-title">サービス内容</h2>
+                <p class="section-desc">お客様のニーズに合わせた多彩なサービスをご提供します</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=250&fit=crop" alt="検品作業">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">検品サービス</h3>
+                        <p class="service-text">
+                            外観検査、機能検査、数量検査など、
+                            製品の品質を厳しくチェック。
+                            不良品の流出を防ぎます。
+                        </p>
+                        <ul class="service-list">
+                            <li>外観検査（キズ・汚れ・変形）</li>
+                            <li>機能検査・動作確認</li>
+                            <li>数量検査・員数確認</li>
+                            <li>寸法測定・規格適合検査</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1553413077-190dd305871c?w=400&h=250&fit=crop" alt="梱包作業">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">梱包サービス</h3>
+                        <p class="service-text">
+                            製品に合わせた最適な梱包方法で、
+                            輸送中の破損を防止。
+                            美しい仕上がりをお約束します。
+                        </p>
+                        <ul class="service-list">
+                            <li>個包装・袋詰め</li>
+                            <li>箱詰め・ケーシング</li>
+                            <li>緩衝材入れ・保護梱包</li>
+                            <li>ギフト包装・化粧箱入れ</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?w=400&h=250&fit=crop" alt="物流倉庫">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">物流代行</h3>
+                        <p class="service-text">
+                            入荷から出荷まで一貫対応。
+                            在庫管理・発送代行で
+                            物流業務をトータルサポート。
+                        </p>
+                        <ul class="service-list">
+                            <li>入出荷管理・在庫管理</li>
+                            <li>ピッキング・仕分け</li>
+                            <li>発送代行・配送手配</li>
+                            <li>返品処理・交換対応</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 強み -->
+    <section class="strength" id="strength">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <p class="section-label">Our Strength</p>
+                <h2 class="section-title">選ばれる理由</h2>
+            </div>
+            <div class="strength-grid">
+                <div class="strength-card" data-aos="fade-up">
+                    <div class="strength-number">01</div>
+                    <h3 class="strength-title">高い品質管理体制</h3>
+                    <p class="strength-text">
+                        徹底した品質管理マニュアルと
+                        熟練スタッフによるダブルチェック体制で、
+                        99.8%以上の品質合格率を実現しています。
+                    </p>
+                </div>
+                <div class="strength-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="strength-number">02</div>
+                    <h3 class="strength-title">柔軟な対応力</h3>
+                    <p class="strength-text">
+                        小ロットから大量生産まで対応可能。
+                        急な増産や短納期のご依頼にも、
+                        迅速かつ柔軟にお応えします。
+                    </p>
+                </div>
+                <div class="strength-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="strength-number">03</div>
+                    <h3 class="strength-title">コストパフォーマンス</h3>
+                    <p class="strength-text">
+                        効率的な作業プロセスと最適な人員配置で、
+                        高品質を維持しながら
+                        コスト削減を実現します。
+                    </p>
+                </div>
+                <div class="strength-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="strength-number">04</div>
+                    <h3 class="strength-title">ワンストップサービス</h3>
+                    <p class="strength-text">
+                        検品から梱包、物流まで一貫してお任せいただけます。
+                        複数業者への依頼が不要になり、
+                        管理コストも削減できます。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 採用情報 -->
+    <section class="recruit" id="recruit">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <p class="section-label">Recruit</p>
+                <h2 class="section-title">採用情報</h2>
+                <p class="section-desc">一緒に働く仲間を募集しています</p>
+            </div>
+            <div class="recruit-card" data-aos="fade-up">
+                <div class="recruit-header">
+                    <span class="recruit-badge">積極採用中</span>
+                    <h3 class="recruit-title">現場作業スタッフ</h3>
+                    <p class="recruit-subtitle">（ピッキング・検品・梱包）</p>
+                </div>
+                <div class="recruit-body">
+                    <div class="recruit-section">
+                        <h4>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+                                <polyline points="14,2 14,8 20,8"/>
+                                <line x1="16" y1="13" x2="8" y2="13"/>
+                                <line x1="16" y1="17" x2="8" y2="17"/>
+                            </svg>
+                            仕事内容
+                        </h4>
+                        <ul class="recruit-list">
+                            <li>製造現場でのピッキング作業</li>
+                            <li>製品の検品・品質チェック</li>
+                            <li>梱包・出荷準備作業</li>
+                            <li>その他軽作業全般</li>
+                        </ul>
+                    </div>
+                    <div class="recruit-grid recruit-grid-2col">
+                        <div class="recruit-item">
+                            <h4>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/>
+                                </svg>
+                                給与
+                            </h4>
+                            <p><strong>27</strong>万円〜<strong>35</strong>万円</p>
+                        </div>
+                        <div class="recruit-item">
+                            <h4>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12,6 12,12 16,14"/>
+                                </svg>
+                                勤務時間
+                            </h4>
+                            <p>8時〜17時 / 20時〜5時<br><span class="recruit-note">2交代勤務（休憩1時間）</span></p>
+                        </div>
+                    </div>
+                    <div class="recruit-section">
+                        <h4>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            勤務地
+                        </h4>
+                        <ul class="recruit-locations">
+                            <li>静岡県静岡市</li>
+                            <li>大阪府堺市</li>
+                            <li>京都府南丹市</li>
+                            <li>滋賀県長浜市</li>
+                            <li>大阪府富田林市</li>
+                            <li>京都府京都市</li>
+                            <li>兵庫県神戸市</li>
+                            <li>兵庫県姫路市</li>
+                            <li>兵庫県小野市</li>
+                            <li>埼玉県さいたま市</li>
+                            <li>東京都港区</li>
+                            <li>神奈川県厚木市</li>
+                            <li>埼玉県加須市</li>
+                            <li>東京都目黒区</li>
+                            <li>茨城県常陸大宮市</li>
+                            <li>兵庫県明石市</li>
+                            <li>京都府福知山市</li>
+                            <li>秋田県大館市</li>
+                            <li>北海道千歳市</li>
+                            <li>福島県須賀川市</li>
+                            <li>山形県寒河江市</li>
+                            <li>福島県田村市</li>
+                            <li>岩手県北上市</li>
+                            <li>北海道岩見沢市</li>
+                            <li>福島県白河市</li>
+                            <li>岩手県花巻市</li>
+                            <li>秋田県潟上市</li>
+                            <li>北海道札幌市</li>
+                            <li>宮城県黒川郡</li>
+                            <li>長野県佐久市</li>
+                            <li>長野県小諸市</li>
+                            <li>長野県安曇野市</li>
+                            <li>山梨県甲府市</li>
+                            <li>長野県飯田市</li>
+                            <li>愛媛県四国中央市</li>
+                            <li>広島県福山市</li>
+                            <li>岡山県真庭市</li>
+                            <li>鳥取県米子市</li>
+                            <li>山口県下関市</li>
+                            <li>福岡県豊前市</li>
+                            <li>熊本県熊本市</li>
+                            <li>愛知県豊田市</li>
+                            <li>岐阜県岐阜市</li>
+                            <li>新潟県柏崎市</li>
+                            <li>愛知県刈谷市</li>
+                            <li>千葉県千葉市</li>
+                            <li>奈良県五條市</li>
+                            <li>和歌山県橋本市</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="recruit-footer">
+                    <a href="#contact" class="btn btn-primary">
+                        <span>応募する</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 会社概要 -->
+    <section class="company" id="company">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <p class="section-label">Company</p>
+                <h2 class="section-title">会社概要</h2>
+            </div>
+            <div class="company-content" data-aos="fade-up">
+                <table class="company-table">
+                    <tr>
+                        <th>会社名</th>
+                        <td>Cross株式会社</td>
+                    </tr>
+                    <tr>
+                        <th>所在地</th>
+                        <td>〒541-0047<br>大阪府大阪市中央区淡路町1-3-2</td>
+                    </tr>
+                    <tr>
+                        <th>事業内容</th>
+                        <td>
+                            ・検品サービス（外観検査、機能検査、数量検査）<br>
+                            ・梱包サービス（個包装、箱詰め、ギフト包装）<br>
+                            ・アッセンブリ（組立、セット組み、ラベル貼り）<br>
+                            ・物流代行（入出荷管理、在庫管理、発送代行）<br>
+                            ・封入・封緘作業<br>
+                            ・その他軽作業全般
+                        </td>
+                    </tr>
+                </table>
+                <div class="company-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.0892507693904!2d135.50445!3d34.6843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e71f5f5f5f5f%3A0x5f5f5f5f5f5f5f5f!2z5aSn6Ziq5bqc5aSn6Ziq5biC5Lit5aSu5Yy65reA6Lev55S6MS0zLTI!5e0!3m2!1sja!2sjp!4v1234567890"
+                        width="100%"
+                        height="300"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- お問い合わせ -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <p class="section-label">Contact</p>
+                <h2 class="section-title">お問い合わせ</h2>
+                <p class="section-desc">2営業日以内に、担当者からご返信させていただきます。<br><span class="section-note">※お問い合わせフォームの返信は、登録メールアドレス宛に致します。</span></p>
+            </div>
+            <div class="contact-wrapper" data-aos="fade-up">
+                <form class="contact-form" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="inquiry-type">お問い合わせ項目<span class="required">*</span></label>
+                        <select id="inquiry-type" name="inquiry-type" required>
+                            <option value="">選択してください</option>
+                            <option value="recruit">採用エントリーについて</option>
+                            <option value="other">その他</option>
+                        </select>
+                        <p class="form-error">オプションを選択してください。</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">氏名<span class="required">*</span></label>
+                        <input type="text" id="name" name="name" placeholder="山田　太郎" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">メールアドレス<span class="required">*</span></label>
+                        <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">電話番号</label>
+                        <input type="tel" id="phone" name="phone" placeholder="000-0000-0000">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">お問い合わせ内容<span class="required">*</span></label>
+                        <textarea id="message" name="message" rows="5" placeholder="例）採用エントリーを希望しています。" required></textarea>
+                    </div>
+                    <div class="form-submit">
+                        <button type="submit" class="btn-submit">送信</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-info">
+                <p class="footer-company">Cross株式会社</p>
+                <p class="footer-address">〒541-0047<br>大阪府大阪市中央区淡路町1-3-2</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Cross株式会社 All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- トップへ戻るボタン -->
+    <button class="back-to-top" id="backToTop" aria-label="トップへ戻る">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18,15 12,9 6,15"/>
+        </svg>
+    </button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
