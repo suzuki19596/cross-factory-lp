@@ -314,7 +314,8 @@ img {
     height: 100%;
 }
 
-.hero-bg-image {
+.hero-bg-image,
+.hero-bg-video {
     position: absolute;
     top: 0;
     left: 0;
