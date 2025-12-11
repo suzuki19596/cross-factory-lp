@@ -15,6 +15,96 @@ document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelectorAll('.nav-list a');
 
     // ============================================
+    // Hero Slider
+    // ============================================
+    initHeroSlider();
+
+    function initHeroSlider() {
+        const slides = document.querySelectorAll('.hero-slide');
+        const dots = document.querySelectorAll('.hero-dot');
+        const prevBtn = document.querySelector('.hero-prev');
+        const nextBtn = document.querySelector('.hero-next');
+
+        if (slides.length === 0) return;
+
+        let currentSlide = 0;
+        let slideInterval;
+        const intervalTime = 6000;
+
+        function showSlide(index) {
+            if (index >= slides.length) index = 0;
+            if (index < 0) index = slides.length - 1;
+
+            slides.forEach((slide, i) => {
+                slide.classList.remove('active');
+                // Reset animations
+                const content = slide.querySelector('.hero-content');
+                if (content) {
+                    content.querySelectorAll('.hero-catch, .hero-title, .hero-desc').forEach(el => {
+                        el.style.animation = 'none';
+                        el.offsetHeight; // Trigger reflow
+                        el.style.animation = '';
+                    });
+                }
+            });
+            dots.forEach(dot => dot.classList.remove('active'));
+
+            slides[index].classList.add('active');
+            if (dots[index]) dots[index].classList.add('active');
+
+            currentSlide = index;
+        }
+
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+
+        function prevSlide() {
+            showSlide(currentSlide - 1);
+        }
+
+        function startAutoSlide() {
+            slideInterval = setInterval(nextSlide, intervalTime);
+        }
+
+        function stopAutoSlide() {
+            clearInterval(slideInterval);
+        }
+
+        if (nextBtn) {
+            nextBtn.addEventListener('click', function() {
+                stopAutoSlide();
+                nextSlide();
+                startAutoSlide();
+            });
+        }
+
+        if (prevBtn) {
+            prevBtn.addEventListener('click', function() {
+                stopAutoSlide();
+                prevSlide();
+                startAutoSlide();
+            });
+        }
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', function() {
+                stopAutoSlide();
+                showSlide(index);
+                startAutoSlide();
+            });
+        });
+
+        startAutoSlide();
+
+        const heroSection = document.querySelector('.hero');
+        if (heroSection) {
+            heroSection.addEventListener('mouseenter', stopAutoSlide);
+            heroSection.addEventListener('mouseleave', startAutoSlide);
+        }
+    }
+
+    // ============================================
     // Loader
     // ============================================
     window.addEventListener('load', function() {

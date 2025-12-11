@@ -97,34 +97,48 @@
 
     <!-- ヒーローセクション -->
     <section class="hero">
-        <div class="hero-bg">
-            <video class="hero-bg-video" autoplay muted loop playsinline>
-                <source src="images/TOP.mp4" type="video/mp4">
-            </video>
-            <div class="hero-gradient"></div>
-            <div class="hero-pattern"></div>
-        </div>
-        <div class="hero-content">
-            <p class="hero-label" data-aos="fade-up">Quality & Precision</p>
-            <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
-                <span class="hero-title-line">品質管理の</span>
-                <span class="hero-title-line accent">プロフェッショナル</span>
-            </h1>
-            <p class="hero-text" data-aos="fade-up" data-aos-delay="200">
-                検品・梱包・アッセンブリから物流まで<br>
-                ワンストップでお客様のビジネスを支えます
-            </p>
-            <div class="hero-buttons" data-aos="fade-up" data-aos-delay="300">
-                <a href="#contact" class="btn btn-primary">
-                    <span>お問い合わせ</span>
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M5 12h14M12 5l7 7-7 7"/>
-                    </svg>
-                </a>
-                <a href="#services" class="btn btn-outline">
-                    <span>サービスを見る</span>
-                </a>
+        <div class="hero-slider">
+            <div class="hero-slide active">
+                <div class="hero-bg" style="background-image: url('images/hero1.jpg');"></div>
+                <div class="hero-content">
+                    <p class="hero-catch">物流をもっとスマートに</p>
+                    <h1 class="hero-title">あなたの物流を<br>私たちが支える</h1>
+                    <p class="hero-desc">梱包・検品・ピッキング・軽作業<br>プロフェッショナルチームにお任せください</p>
+                </div>
             </div>
+            <div class="hero-slide">
+                <div class="hero-bg" style="background-image: url('images/hero2.jpg');"></div>
+                <div class="hero-content">
+                    <p class="hero-catch">Quality & Speed</p>
+                    <h1 class="hero-title">正確・迅速・丁寧<br>三拍子揃った作業</h1>
+                    <p class="hero-desc">熟練スタッフによる高品質な作業で<br>お客様の信頼にお応えします</p>
+                </div>
+            </div>
+            <div class="hero-slide">
+                <div class="hero-bg" style="background-image: url('images/hero3.jpg');"></div>
+                <div class="hero-content">
+                    <p class="hero-catch">Flexible Solutions</p>
+                    <h1 class="hero-title">小ロットから<br>大量案件まで</h1>
+                    <p class="hero-desc">お客様のニーズに合わせた<br>柔軟なサービスを提供</p>
+                </div>
+            </div>
+        </div>
+        <div class="hero-controls">
+            <button class="hero-prev" aria-label="前へ">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M15 18l-6-6 6-6"></path>
+                </svg>
+            </button>
+            <div class="hero-dots">
+                <button class="hero-dot active" data-slide="0"></button>
+                <button class="hero-dot" data-slide="1"></button>
+                <button class="hero-dot" data-slide="2"></button>
+            </div>
+            <button class="hero-next" aria-label="次へ">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 18l6-6-6-6"></path>
+                </svg>
+            </button>
         </div>
         <div class="hero-scroll">
             <span>Scroll</span>
@@ -163,7 +177,7 @@
                         <div class="about-feature">
                             <div class="feature-icon">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/>
+                                    <path d="M18 4L12 12M6 4l6 8M9 11h6M9 15h6M12 12v10"/>
                                 </svg>
                             </div>
                             <span>コスト削減</span>
@@ -181,7 +195,7 @@
                 </div>
                 <div class="about-visual" data-aos="fade-left">
                     <div class="about-image">
-                        <img src="images/factory.jpg" alt="工場作業風景">
+                        <img src="images/factory.jpg" alt="工場内作業">
                     </div>
                 </div>
             </div>
@@ -199,7 +213,7 @@
             <div class="services-grid">
                 <div class="service-card" data-aos="fade-up">
                     <div class="service-image">
-                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=250&fit=crop" alt="検品作業">
+                        <img src="images/Inspection.jpg" alt="検品作業">
                     </div>
                     <div class="service-content">
                         <h3 class="service-title">検品サービス</h3>
@@ -359,65 +373,6 @@
                             <p>8時〜17時 / 20時〜5時<br><span class="recruit-note">2交代勤務（休憩1時間）</span></p>
                         </div>
                     </div>
-                    <div class="recruit-section">
-                        <h4>
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
-                                <circle cx="12" cy="10" r="3"/>
-                            </svg>
-                            勤務地
-                        </h4>
-                        <ul class="recruit-locations">
-                            <li>静岡県静岡市</li>
-                            <li>大阪府堺市</li>
-                            <li>京都府南丹市</li>
-                            <li>滋賀県長浜市</li>
-                            <li>大阪府富田林市</li>
-                            <li>京都府京都市</li>
-                            <li>兵庫県神戸市</li>
-                            <li>兵庫県姫路市</li>
-                            <li>兵庫県小野市</li>
-                            <li>埼玉県さいたま市</li>
-                            <li>東京都港区</li>
-                            <li>神奈川県厚木市</li>
-                            <li>埼玉県加須市</li>
-                            <li>東京都目黒区</li>
-                            <li>茨城県常陸大宮市</li>
-                            <li>兵庫県明石市</li>
-                            <li>京都府福知山市</li>
-                            <li>秋田県大館市</li>
-                            <li>北海道千歳市</li>
-                            <li>福島県須賀川市</li>
-                            <li>山形県寒河江市</li>
-                            <li>福島県田村市</li>
-                            <li>岩手県北上市</li>
-                            <li>北海道岩見沢市</li>
-                            <li>福島県白河市</li>
-                            <li>岩手県花巻市</li>
-                            <li>秋田県潟上市</li>
-                            <li>北海道札幌市</li>
-                            <li>宮城県黒川郡</li>
-                            <li>長野県佐久市</li>
-                            <li>長野県小諸市</li>
-                            <li>長野県安曇野市</li>
-                            <li>山梨県甲府市</li>
-                            <li>長野県飯田市</li>
-                            <li>愛媛県四国中央市</li>
-                            <li>広島県福山市</li>
-                            <li>岡山県真庭市</li>
-                            <li>鳥取県米子市</li>
-                            <li>山口県下関市</li>
-                            <li>福岡県豊前市</li>
-                            <li>熊本県熊本市</li>
-                            <li>愛知県豊田市</li>
-                            <li>岐阜県岐阜市</li>
-                            <li>新潟県柏崎市</li>
-                            <li>愛知県刈谷市</li>
-                            <li>千葉県千葉市</li>
-                            <li>奈良県五條市</li>
-                            <li>和歌山県橋本市</li>
-                        </ul>
-                    </div>
                 </div>
                 <div class="recruit-footer">
                     <a href="#contact" class="btn btn-primary">
@@ -460,16 +415,6 @@
                         </td>
                     </tr>
                 </table>
-                <div class="company-map">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.0892507693904!2d135.50445!3d34.6843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e71f5f5f5f5f%3A0x5f5f5f5f5f5f5f5f!2z5aSn6Ziq5bqc5aSn6Ziq5biC5Lit5aSu5Yy65reA6Lev55S6MS0zLTI!5e0!3m2!1sja!2sjp!4v1234567890"
-                        width="100%"
-                        height="300"
-                        style="border:0;"
-                        allowfullscreen=""
-                        loading="lazy">
-                    </iframe>
-                </div>
             </div>
         </div>
     </section>
